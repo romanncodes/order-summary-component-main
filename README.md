@@ -1,8 +1,12 @@
 # Frontend Mentor - Order summary card
 
+<a href='https://romanncodes.github.io/order-summary-component-main/'>View Solution</a>
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+
+
 
 Thanks for checking out this front-end coding challenge.
 
