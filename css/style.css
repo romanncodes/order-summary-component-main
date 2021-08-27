@@ -1,0 +1,131 @@
+:root{
+    /* Primary */
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+}
+.container{
+    margin: 1em;
+    background-color: white;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    box-shadow: 3px 3px 45px rgb(107, 104, 104);
+    
+}
+
+figure{
+    margin: 0;
+}
+figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em  1em 0 0 ;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 2.5em;
+}
+.title h1{
+    font-weight: 900;
+    color: var(--Darkblue)
+}
+.title p{
+    color: var(--Desaturatedblue);
+    font-weight: 500;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2.5em;
+    background-color: var(--Verypaleblue);
+    padding: 0.7em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+}
+.description p{
+    margin: 0;
+}
+.description span{
+    font-weight: 700;
+}
+.change a{
+    color: var(--Brightblue);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5em;
+    margin-top: 2em;
+}
+
+.pay-button{
+    margin-bottom: 1.5em;
+    border:0;
+    background-color: var(--Brightblue);
+    padding: 1em  0;
+    color:var(--Verypaleblue);
+    font-weight: 700;
+    border-radius: 0.6em;
+    box-shadow: 3px 3px 15px black;
+    cursor: pointer;
+}
+
+.cancel-button{
+    background-color: white;
+    border:0;
+    padding: 1em  0;
+    color:var(--Desaturatedblue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        background-image: url(../img/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 50% ;
+   
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        width: 375px;
+    }
+}
